@@ -119,7 +119,7 @@ function CommentInput({
     >
       <Box sx={{ margin: '0.2em 0' }}>
         {!_.isEmpty(user?.profile_picture) &&
-        user?.profile_picture?.split('/').pop() !== 'thumb_' ? (
+          user?.profile_picture?.split('/').pop() !== 'thumb_' ? (
           <Avatar
             sx={{ width: 30, height: 30 }}
             alt={user?.fullname}
@@ -131,11 +131,10 @@ function CommentInput({
               border: '2px solid #25165b',
             }}
           >
-            {`${user?.fullname.split(' ')[0][0]}${
-              !_.isEmpty(user?.fullname.split(' ')[1][0])
+            {`${user?.fullname.split(' ')[0][0]}${!_.isEmpty(user?.fullname.split(' ')[1][0])
                 ? user?.fullname.split(' ')[1][0]
                 : ''
-            }`}
+              }`}
           </Avatar>
         )}
       </Box>
@@ -213,7 +212,7 @@ function CommentInput({
         /> */}
         <Editor
           onInit={(evt, editor) => (editorRef.current = editor)}
-          apiKey="ete4lgqtbj1e2pnldnq9d6d8qnphjgcy9rw4phddizgfqe7z"
+          apiKey=""
           initialValue={commentText}
           init={{
             height: 130,

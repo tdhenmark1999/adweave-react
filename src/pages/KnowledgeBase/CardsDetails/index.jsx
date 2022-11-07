@@ -153,7 +153,7 @@ export default function KnowledgeBase() {
               <TypographySubTitle variant="h6">Product, Support and Troubleshooting</TypographySubTitle>
               <TypographyTitleGroup variant="h6">Article Description</TypographyTitleGroup>
               <Editor
-                apiKey="ete4lgqtbj1e2pnldnq9d6d8qnphjgcy9rw4phddizgfqe7z"
+                apiKey=""
                 initialValue="<p></p>"
                 init={{
                   plugins: 'link image code fullscreen preview',

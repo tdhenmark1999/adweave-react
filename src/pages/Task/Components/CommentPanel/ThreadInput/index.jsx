@@ -135,7 +135,7 @@ function ThreadInput({
         <Stack spacing={1} direction="row" alignItems="center">
           <Box sx={{ margin: '0.2em 0' }}>
             {!_.isNull(user?.profile_picture) &&
-            user?.profile_picture?.split('/').pop() !== 'thumb_' ? (
+              user?.profile_picture?.split('/').pop() !== 'thumb_' ? (
               <Avatar
                 sx={{ width: 30, height: 30 }}
                 alt={user?.fullname}
@@ -147,11 +147,10 @@ function ThreadInput({
                   border: '2px solid #25165b',
                 }}
               >
-                {`${user?.fullname.split(' ')[0][0]}${
-                  !_.isEmpty(user?.fullname.split(' ')[1][0])
+                {`${user?.fullname.split(' ')[0][0]}${!_.isEmpty(user?.fullname.split(' ')[1][0])
                     ? user?.fullname.split(' ')[1][0]
                     : ''
-                }`}
+                  }`}
               </Avatar>
             )}
           </Box>
@@ -177,7 +176,7 @@ function ThreadInput({
       <Box width="100%">
         <Editor
           onInit={(evt, editor) => (editorRef.current = editor)}
-          apiKey="ete4lgqtbj1e2pnldnq9d6d8qnphjgcy9rw4phddizgfqe7z"
+          apiKey=""
           initialValue={threadText}
           init={{
             height: 300,

@@ -112,7 +112,7 @@ function NewTicket({ options }) {
               renderInput={(params) => (
                 <TextField {...params} label="Tag" required />
               )}
-              onChange={() => {}}
+              onChange={() => { }}
             />
           </Grid>
           <Grid item xs={6}>
@@ -124,7 +124,7 @@ function NewTicket({ options }) {
               renderInput={(params) => (
                 <TextField {...params} label="Services" required />
               )}
-              onChange={() => {}}
+              onChange={() => { }}
             />
           </Grid>
           <Grid item xs={6}>
@@ -150,7 +150,7 @@ function NewTicket({ options }) {
               renderInput={(params) => (
                 <TextField {...params} label="Assign" required />
               )}
-              onChange={() => {}}
+              onChange={() => { }}
             />
           </Grid>
           <Grid item xs={6}>
@@ -162,7 +162,7 @@ function NewTicket({ options }) {
               renderInput={(params) => (
                 <TextField {...params} label="CC" required />
               )}
-              onChange={() => {}}
+              onChange={() => { }}
             />
           </Grid>
           <Grid item xs={6}>
@@ -174,7 +174,7 @@ function NewTicket({ options }) {
               renderInput={(params) => (
                 <TextField {...params} label="Department" required />
               )}
-              onChange={() => {}}
+              onChange={() => { }}
             />
           </Grid>
           <Grid item xs={6}>
@@ -186,7 +186,7 @@ function NewTicket({ options }) {
               renderInput={(params) => (
                 <TextField {...params} label="Priority" required />
               )}
-              onChange={() => {}}
+              onChange={() => { }}
             />
           </Grid>
           <Grid item xs={12}>
@@ -210,7 +210,7 @@ function NewTicket({ options }) {
                   required
                 />
               )}
-              onChange={() => {}}
+              onChange={() => { }}
             />
           </Grid>
           <Grid item xs={6}>
@@ -222,7 +222,7 @@ function NewTicket({ options }) {
           </Grid>
           <Grid item xs={12}>
             <Editor
-              apiKey="ete4lgqtbj1e2pnldnq9d6d8qnphjgcy9rw4phddizgfqe7z"
+              apiKey=""
               initialValue="<p></p>"
               init={{
                 plugins: 'link image code fullscreen preview',
@@ -283,23 +283,23 @@ function NewTicket({ options }) {
                       sx={{
                         fontSize: '0.85em',
                       }}
-                      // onClick={() => {
-                      //   if (
-                      //     getFileType(attachment.name ?? attachment.file_name) ===
-                      //     'image'
-                      //   ) {
-                      //     handleModal(
-                      //       'attachment_preview',
-                      //       true,
-                      //       attachment.source ?? attachment.file_path
-                      //     );
-                      //   } else {
-                      //     window.open(
-                      //       attachment.source ?? attachment.file_path,
-                      //       '_blank'
-                      //     );
-                      //   }
-                      // }}
+                    // onClick={() => {
+                    //   if (
+                    //     getFileType(attachment.name ?? attachment.file_name) ===
+                    //     'image'
+                    //   ) {
+                    //     handleModal(
+                    //       'attachment_preview',
+                    //       true,
+                    //       attachment.source ?? attachment.file_path
+                    //     );
+                    //   } else {
+                    //     window.open(
+                    //       attachment.source ?? attachment.file_path,
+                    //       '_blank'
+                    //     );
+                    //   }
+                    // }}
                     >
                       {attachment.name ?? attachment.file_name}
                     </Typography>
